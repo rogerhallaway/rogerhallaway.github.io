@@ -21,8 +21,13 @@
 <link rel="shortcut icon" href="icon_url.png">
 
 <style>
+
+* { margin: 0; padding: 0; }
+
 body {
+	padding-top: 50px;
 	margin:0;
+	color: #ffffff;
 	background:#020a11;
 	font-family: "Courier New", monospace;
 	font-smooth: never;
@@ -30,34 +35,26 @@ body {
 	font-size: 14px;
 	background-image: url("bg.gif");
     	background-repeat: repeat;
+	text-align: center;
 	}
+                
+        h1 { text-align: center; font-size: 16px; }
+        .rwd-line { display: block; }
+        
+        @media screen and (min-width: 768px){
+            .rwd-line { display: inline; }
+        }
 a {
 	color:#cbe10f;}
 
-div {
-	background:none;
-	color:#ffffff;
-	position: absolute;
-	margin: auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 90vh;
-	height: 90vh;
-	padding: 25px;
-	text-align: center;}
-
 .highlight {
 	background-color:#020a11;}
-
 </style>
 
 </head>
 
 <body>
-
-<div>
+<br>
 <img src="logo.gif">
 <br><br>
 
@@ -75,8 +72,6 @@ div {
 <span class="highlight">upcoming shows:</span><br><br>
 <span class="highlight"><a href="https://www.facebook.com/events/235798560214585/">saturday, march 11 - los angeles, ca - dj's backyard</a><br></span>
 <br><br>
-
-</div>
 
 
 </body>
