@@ -61,15 +61,57 @@ a:hover {
 </head>
 
 <body>
-	<!-- Logo -->
+	<!-- LOGO -->
 <img src="logo_roger_hallaway.gif">
-</br><br>
+</br>
+	<!-- BUY MY SOUL -->
+<center><head>
+<script type="text/javascript">
+function preLoad() {
+  a1 = new Image;
+  a1.src = '000_shirt_0.png'  
+  a2 = new Image;
+  a2.src = '000_shirt_1.png'
+  a3 = new Image;
+  a3.src = '000_shirt_2.png'
+}
+function im(image) {
+  document.getElementById(image[0]).src = eval(image + ".src")
+}
+</script>
+</head>    
+
+<body onLoad="preLoad()">
+<form autocomplete="off">
+  <input type="radio" name="a" onClick="im('a1')" checked>
+  <input type="radio" name="a" onClick="im('a2')">
+  <input type="radio" name="a" onClick="im('a3')">
+</form>
+<img id="a" src="000_shirt_0.png" width="500" height="500" alt="">
+</body>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="8V8M8HBFGS4AW">
+$15+s&h<table>
+<tr><td><input type="hidden" name="on0" value="Size"></td></tr><tr><td><select name="os0">
+	<option value="Small">Small (16 remaining)</option>
+	<option value="Medium">Medium (16 remaining)</option>
+	<option value="Large">Large (15 remaining)</option>
+	<option value="X-Large">X-Large (5 remaining)</option>
+</select></td></tr>
+</table>
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The 
+
+safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form></center>
 	<!-- LINKS -->
-<a href="https://www.youtube.com/watch?v=kdrgqVsH_Fc"><img src="whenwillwetalkagain.gif"></a><br><br><a href="https://www.facebook.com/rogerhallaway/"><img src="icon_facebook.gif"></a><a 
+<br><a href="https://www.facebook.com/rogerhallaway/"><img src="Icons/icon_facebook.gif"></a><a 
 
-href="https://www.instagram.com/rogerhallaway/"><img src="icon_instagram.gif"></a><a href="https://soundcloud.com/rogerhallaway"><img src="icon_soundcloud.gif"></a><a 
+href="https://www.instagram.com/rogerhallaway/"><img src="Icons/icon_instagram.gif"></a><a 
 
-href="https://rogerhallaway.bandcamp.com/"><img src="icon_bandcamp.gif"></a><br><br>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@rogerhallaway.com">contact@rogerhallaway.com</a>
+href="https://soundcloud.com/rogerhallaway"><img src="Icons/icon_soundcloud.gif"></a><a href="https://rogerhallaway.bandcamp.com/"><img 
+
+src="Icons/icon_bandcamp.gif"></a>
 </body>
 </html>
