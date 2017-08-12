@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [L]
-ErrorDocument 404 http://www.domain.com/404page.html
+ErrorDocument 404 http://www.htmlgoodies.com/errors/notfound.html
