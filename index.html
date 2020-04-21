@@ -1,7 +1,6 @@
-<!doctype html>
-
 <html lang="en-US">
 
+<html>
 <head>
 
   <meta charset="utf-8">
@@ -16,61 +15,32 @@
   <meta name="twitter:card"        content="summary_large_image">
   <meta property="og:url"          content="http://rogerhallaway.com/">
 
-<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-
 <link rel="shortcut icon" href="icon_url.png">
 
-<style>
+    <style>
+body {background-color: black;}
 
-* { margin: 0; padding: 0; }
-
-body {
-	padding-top: 50px;
-	margin:0;
-	color: #FFFFFF;
-	background: #fdbaec;
-	background-image: url("bg.gif");
-	background-repeat: repeat-x;
-	background-position: center top;
-	font-family: Arial;
-	font-size: 24px;
-	text-align: center;
-	letter-spacing: 6px;
-	text-transform: none;
-	}
-                
-        h1 { text-align: center; font-size: 16px; }
-        .rwd-line { display: block; }
-        
-        @media screen and (min-width: 768px){
-            .rwd-line { display: inline; }
+        * {
+            margin: 0;
+            padding: 0;
         }
-a {
-	color:#FFFFFF;
-	text-decoration: underline;}
-
-a:hover {
-	text-decoration: none;}
-
-.highlight {
-	background-color:#020a11;
-	padding-left: 10px;
-	padding-right: 10px;}
-</style>
-
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- LOGO -->
-<img src="logo_roger_hallaway.gif">
-</br>
-	<!-- BUY MY SOUL -->
-<span style="font-size: 48px"><BR><b><a href="https://open.spotify.com/track/5UKGkluBKegomfEWcCdHqt">SPOTIFY</a><br><br>
-<a href="https://music.apple.com/us/album/im-fine/1506470045?i=1506470316">APPLE MUSIC</a><BR><BR>
-<a href="https://www.instagram.com/rogerhallaway/">INSTAGRAM</a><br><BR>
-<a href="https://twitter.com/RogerHallaway">TWITTER</a><br><BR>
-<a href="https://www.youtube.com/watch?v=CO4J9-A3XAM">YOUTUBE</a><br><BR>
-<a href="https://soundcloud.com/rogerhallaway/how-does-it-feel">SOUNDCLOUD</a><BR><BR><BR></b></span>
-Roger Hallaway can be reached at<br><BR><b>contact@rogerhallaway.com</b>
+<div class="imgbox">
+    <center><img class="center-fit" src='bumper_roger.gif'></center>
+    <center><a href="https://open.spotify.com/track/5UKGkluBKegomfEWcCdHqt"><img class="center-fit" src='bumper_spotify.gif'></a></center>
+    <center><a href="https://music.apple.com/us/album/im-fine/1506470045?i=1506470316"><img class="center-fit" src='bumper_apple_music.gif'></a></center>
+    <center><a href="https://www.youtube.com/rogerhallaway"><img class="center-fit" src='bumper_youtube.gif'></a></center>
+</div>
 </body>
 </html>
