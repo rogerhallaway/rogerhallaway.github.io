@@ -1,0 +1,28 @@
+<pre lang="javascript">
+  
+        <title>Roger Hallaway's Overtime Calculator</title>
+        <script language="javascript">
+
+                function addNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var val3 = parseInt(document.getElementById("value3").value);
+                        var val4 = parseInt(document.getElementById("value4").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = (val1 * (val4)) + (val2 * (val4 * 1.5)) + (val3 * (val4 * 2));
+                }
+        </script>
+	<b><u>Roger Hallaway's Overtime Calculator</u></b>
+  
+  
+        <b>Pay rate:</b> $ <input type="text" id="value4" name="value4" value="25"> per hour
+
+        <b>Normal:</b> <input type="text" id="value1" name="value1" value="0"> hours
+        <b>Overtime:</b> <input type="text" id="value2" name="value2" value="0"> hours
+        <b>Double:</b> <input type="text" id="value3" name="value3" value="0"> hours<br>
+        <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()">
+
+        <b>You earned:</b> $ <input type="text" id="answer" name="answer" value="">
+
+</pre>
