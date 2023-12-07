@@ -1,7 +1,43 @@
-<pre lang="javascript">
-  
-        <title>Roger Hallaway's Overtime Calculator</title>
+        <title>Roger's Overtime Calculator</title>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+font-family: arial;
+}
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 5px;
+  text-align: right;
+  border: 0px;
+  line-height: 30px;}
+
+.column2 {
+  flex: 50%;
+  padding: 5px;
+  text-align: left;
+  border: 0px;
+  line-height: 30px;}
+
+p {
+  color: black;}
+
+h2 {text-align: center;}
+</style>
+
         <script language="javascript">
+                document.getElementById("demo").style.fontSize = "x-large";
 
                 function addNumbers()
                 {
@@ -11,18 +47,45 @@
                         var val4 = parseInt(document.getElementById("value4").value);
                         var ansD = document.getElementById("answer");
                         ansD.value = (val1 * (val4)) + (val2 * (val4 * 1.5)) + (val3 * (val4 * 2));
+
                 }
         </script>
-	<b><u>Roger Hallaway's Overtime Calculator</u></b>
-  
-  
-        <b>Pay rate:</b> $ <input type="text" id="value4" name="value4" value="25"> per hour
+<br>
 
-        <b>Normal:</b> <input type="text" id="value1" name="value1" value="0"> hours
-        <b>Overtime:</b> <input type="text" id="value2" name="value2" value="0"> hours
-        <b>Double:</b> <input type="text" id="value3" name="value3" value="0"> hours<br>
-        <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()">
 
-        <b>You earned:</b> $ <input type="text" id="answer" name="answer" value="">
+</head>
+<body>
 
-</pre>
+        <h2>Roger's Overtime Calculator</h2>
+
+<div class="row">
+  <div class="column">
+    <p>
+        <b>Pay rate:</b> <br><br>
+<b>Normal:</b> <br>
+<b>Overtime:</b> <br>
+<b>Double:</b></p>
+  </div>
+  <div class="column2">
+    <p>$<input type="text" id="value4" name="value4" value="25" size="6"> per hour<br><br>
+        <input type="text" id="value1" name="value1" value="0" size="6"> hours<br>
+        <input type="text" id="value2" name="value2" value="0" size="6"> hours<br>
+        <input type="text" id="value3" name="value3" value="0" size="6"> hours</p>
+  </div>
+</div>
+
+
+<center>        <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"></center>
+
+<div class="row">
+  <div class="column">
+    <p><b>You earned:</b></p>
+  </div>
+  <div class="column2">
+	<p>
+         $<input type="text" id="answer" name="answer" value="" size="6"></p>
+  </div>
+</div>
+
+</body>
+</html>
