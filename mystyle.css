@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+   scrollbar-gutter: stable;
+}
+
+body {
+background-color: #FFFFFF;
+font-family: Arial;
+   scrollbar-gutter: stable;
+
+background-color: #FFFFFF;
+font-family: Arial;
+padding: 0px;
+margin: 10px;
+font-size: 24pt;
+letter-spacing: -2pt;}
+
+h2 {
+
+font-size: 36pt;}
+
+
+a .column:link {
+color: black;}
+
+a .column:hover {
+border: 1px #0000FF solid;
+border-bottom: 2px #0000FF solid;
+border-right: 2px #0000FF solid;
+color: #0000FF;
+}
+
+
+a:visited { text-decoration: none;
+color: #000000;}
+
+a:hover {
+color: #0000FF;}
+
+a .column:visited { text-decoration: none;
+color: #000000;}
+
+
+a:link { text-decoration: none;}
+
+/* Create three equal columns that floats next to each other */
+.buy {
+background-color: #0000FF;
+border: 5px #0000FF solid;
+  border-radius: 10px;
+padding-left: 10px;
+padding-right: 10px;
+text-shadow: none;
+color: white;}
+
+.buy:hover {
+background-color: #FFFFFF;
+border: 5px #FFFFFF solid;
+  border-radius: 10px;
+padding-left: 10px;
+padding-right: 10px;
+text-shadow: none;
+color: #0000FF;}
+.column {
+  float: left;
+  width: 75%;
+padding: 32px;
+background-color: #FFFFFF;
+  border-radius: 10px;
+color: #000000;
+border: 1px #000000 solid;
+border-bottom: 2px #000000 solid;
+border-right: 2px #000000 solid;
+text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
+}
+
+.column2 {
+
+  float: left;
+  width: 75%;
+padding: 32px;
+background-color: #FFFFFF;
+  border-radius: 10px;
+color: #000000;
+border: 1px #000000 solid;
+border-bottom: 2px #000000 solid;
+border-right: 2px #000000 solid;
+}
+
+.column3 {
+  float: left;
+  width: 24.5%;
+padding: 32px;
+background-color: #FFFFFF;
+  border-radius: 10px;
+color: #000000;
+border: 1px #000000 solid;
+border-bottom: 2px #000000 solid;
+border-right: 2px #000000 solid;
+
+}
+
+.leftcolumn {
+  float: left;
+  width: 50%;}
+
+.rightcolumn {
+  float: left;
+  width: 50%;}
+
+.column_box {
+  float: left;
+  width: 75%;
+padding: 32px;
+background-color: #000000;
+
+height: 500px;
+  border-radius: 10px;
+color: #c4c3c6;
+
+}
+
+.noselect {
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+}
+
+
+.sidebar {
+  float: left;
+  width: 12.5%;
+}
+br
+{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+
+    #icon_ig {
+        width: 32px; height: 32px;
+        background: url('images/ig_icon.gif') no-repeat left top; display:inline-block
+    }
+    #icon_ig:hover { background-position: -32px 0px ; display:inline-block}
+
+    #icon_yt {
+        width: 32px; height: 32px;
+        background: url('images/yt_icon.gif') no-repeat left top; display:inline-block
+    }
+    #icon_yt:hover { background-position: -32px 0px ; display:inline-block}
+
+    #icon_sp {
+        width: 32px; height: 32px;
+        background: url('images/sp_icon.gif') no-repeat left top; display:inline-block
+    }
+    #icon_sp:hover { background-position: -32px 0px ; display:inline-block}
+
+.row {
+margin-top: 12px;
+margin-bottom: 12px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+.leftcolumn {
+  float: left;
+  width: 100%;
+  margin-bottom: 24px;}
+
+.rightcolumn {
+  float: left;
+  width: 100%;}
+}
