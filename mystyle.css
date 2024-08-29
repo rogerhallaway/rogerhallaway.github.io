@@ -23,6 +23,8 @@ font-size: 36pt;}
 a .column:link {
 color: black;}
 
+a:link {color: black;}
+
 a .column:hover {
 border: 1px #0000FF solid;
 border-bottom: 2px #0000FF solid;
